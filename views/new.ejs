@@ -1,0 +1,32 @@
+<% include partials/header.ejs %>
+
+
+<div class="container">
+
+<form action="/monkeys" method="POST" class="newForm">
+        <div class="border p-3">
+
+            <h1>New Monkey</h1>
+
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" name="monkey[title]" required class="form-control" placeholder="whatever monkey you want">
+            </div>
+            <div class="form-group">
+                <label for="Image">Image</label>
+                <input type="url" name="monkey[image]" required class="form-control" placeholder="url of image">
+            </div>
+            <div class="form-group">
+                <label for="Text">Description</label>
+                <textarea name="monkey[text]" id="" required cols="30" rows="3" class="form-control" placeholder="Add something about your monkey"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Add it in!</button>
+            
+        </div>
+    </form>
+</div>
+
+
+
+<% include partials/footer.ejs %>

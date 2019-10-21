@@ -1,0 +1,19 @@
+<% include partials/header.ejs %>
+
+
+<div class="container">
+
+    <% monkeys.forEach(function(monkey){ %>
+        <div>
+            <h2><%= monkey.title %></h2>
+            <img src="<%= monkey.image %>" alt="">
+            <p><%= monkey.text %></p>
+            <a href="/monkeys/<%= monkey._id %>">Read More</a>
+        </div>
+    <% }); %>
+
+</div>
+
+
+
+<% include partials/footer.ejs %>

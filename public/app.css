@@ -1,0 +1,17 @@
+img{
+    height: 50%;
+    width: 50%;
+}
+.navbar-brand {
+    margin-right: 5em;
+}
+.nav-item {
+    margin-right: 1.5em;
+}
+.container{
+    margin: 0 auto !important;
+}
+.newForm {
+    margin: 0 auto;
+    width: 50%;
+}
