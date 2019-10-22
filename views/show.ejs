@@ -13,6 +13,10 @@
             <div class="description">
                 <p><%- monkey.text %></p>
             </div>
+            <a href="/monkeys/<%= monkey._id %>/edit" class="ui button orange basic">Edit</a>
+            <form id="form-style" action="/monkeys/<%= monkey._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
         </div>
 
     </div>

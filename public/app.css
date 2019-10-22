@@ -1,10 +1,9 @@
-img{
-    height: 50%;
-    width: 50%;
-}
 i{
     padding: 0px 5px;
 }
 .nav-margin {
     margin-top: 6em !important;
+}
+#form-style {
+    display: inline;
 }
