@@ -2,16 +2,9 @@ img{
     height: 50%;
     width: 50%;
 }
-.navbar-brand {
-    margin-right: 5em;
+i{
+    padding: 0px 5px;
 }
-.nav-item {
-    margin-right: 1.5em;
-}
-.container{
-    margin: 0 auto !important;
-}
-.newForm {
-    margin: 0 auto;
-    width: 50%;
+.nav-margin {
+    margin-top: 6em !important;
 }

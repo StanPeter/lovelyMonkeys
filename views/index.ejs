@@ -1,13 +1,14 @@
 <% include partials/header.ejs %>
 
 
-<div class="container">
+<div class="nav-margin">
 
     <% monkeys.forEach(function(monkey){ %>
         <div>
             <h2><%= monkey.title %></h2>
             <img src="<%= monkey.image %>" alt="">
             <p><%= monkey.text %></p>
+            <p><%= monkey._id %></p>
             <a href="/monkeys/<%= monkey._id %>">Read More</a>
         </div>
     <% }); %>

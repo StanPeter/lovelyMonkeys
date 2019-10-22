@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS, Font Awesome, CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Semantic CSS, Font Awesome, CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css"
+    integrity="sha256-6EmDtMPnt0woqajc9HLtR0Gl6iglbh4/KaHN+UZQcKQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
     <link rel="stylesheet" href="/app.css">
@@ -17,29 +17,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
-        <div class="container">
-
-            <a class="navbar-brand" href="/monkeys">Lovely <i class="fas fa-globe-africa"></i> Monkeys</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navExpander"
-                aria-controls="navExpander" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navExpander">
-                <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/monkeys">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/monkeys/new">New Monkey</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Later</a>
-                    </li>
-                    
-                </ul>
-            </div>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <div class="header item">Lovely <i class="fas fa-globe-africa"></i> Monkey</div>
+            <a href="/monkeys" class="item">Home</a>
+            <a href="/monkeys/new" class="item">New Monkey</a>
         </div>
-    </nav>
+    </div>

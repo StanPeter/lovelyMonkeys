@@ -59,7 +59,7 @@ app.post("/monkeys", function(req, res){
     });
 });
 //SHOW ROUTE
-app.get("monkeys/:id", function(req, res){
+app.get("/monkeys/:id", function(req, res){
     Monkeys.findById(req.params.id, function(err, foundMonkey){
         if(err){
             console.log(err);
