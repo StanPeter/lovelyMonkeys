@@ -114,6 +114,15 @@ app.delete("/monkeys/:id", function(req, res){
     });
 });
 
+//LOGIN ROUTE
+app.get("/login", function(req, res){
+    res.render("registration/login");
+});
+
+//REGISTER ROUTE
+app.get("/register", function(req, res){
+    res.render("registration/register");
+});
 
 //running server
 app.listen(3000, function(){
