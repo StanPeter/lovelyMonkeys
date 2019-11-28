@@ -33,7 +33,7 @@ var Monkeys = mongoose.model("monkey", appSchema);
 
 //RESTFUL routes
 app.get("/", function(req, res){
-    res.redirect("/monkeys");
+    res.render("landing");
 });
 
 //INDEX ROUTE

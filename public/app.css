@@ -1,9 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
 i{
     padding: 0px 5px;
 }
+
 .nav-margin {
     margin-top: 6em !important;
 }
+
+.landing {
+    background-image: url("landMonkey.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.landing h1 {
+    font-family: 'Sacramento', cursive;
+    margin-top: 1em;
+    margin-left: 12%;
+    letter-spacing: 2.5px;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.landO {
+    color: rgb(94, 94, 94);
+}
+
+.divBtn {
+    width: 100%;
+}
+
+.landBtn {
+    margin: 30% auto !important;
+}
+
 #form-style {
     display: inline;
+}
+
+.slideImg {
+    position: absolute;
+    height: 100px;
+    width: 120px;
+    bottom: 2em;
+    left: 3em;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    animation: imageAnimation 20s linear infinite;
+}
+
+.slideImg li {
+    list-style: none;
+}
+
+
+.slideImg li:nth-child(1) {
+    background-image: url("http://i.imgur.com/K3mPv14.jpg");
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+/* For older browsers, no-cssanimations comes from 'modernizr' package */
+.no-cssanimations .slideImg li {
+    opacity: 1;
 }
