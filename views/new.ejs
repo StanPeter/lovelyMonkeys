@@ -1,0 +1,28 @@
+<% include partials/header.ejs %>
+
+<div class="ui main text container segment nav-margin">
+    <div class="ui huge header">New Monkey</div>
+
+    <form action="/monkeys" method="POST" class="ui form">
+
+        <div class="field">
+            <label for="Name">Name</label>
+            <input type="text" name="monkey[title]" required class="form-control" placeholder="whatever monkey you want">
+        </div>
+        <div class="field">
+            <label for="Image">Image</label>
+            <input type="url" name="monkey[image]" required class="form-control" placeholder="url of image">
+        </div>
+        <div class="field">
+            <label for="Text">Description</label>
+            <textarea name="monkey[text]" id="" required cols="30" rows="3" class="form-control" placeholder="Add something about your monkey"></textarea>
+        </div>
+
+        <button type="submit" class="ui button violet basic big">Add it in!</button>
+                
+    </form>
+
+</div>
+
+
+<% include partials/footer.ejs %>

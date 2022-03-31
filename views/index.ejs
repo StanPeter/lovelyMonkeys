@@ -1,0 +1,46 @@
+<% include partials/header.ejs %>
+
+
+<div class="nav-margin ui main text container">
+    <div class="ui huge header">RESTful Lovely Monkey</div>
+
+    
+    <div class="ui top attached segment">
+        <div class="ui divided items">
+
+            <% monkeys.forEach(function(monkey){ %>
+                <div class="item">
+
+                    <div class="image">
+                        <img src="<%= monkey.image %>" alt="">
+                    </div>
+
+                    <div class="content">
+                        <a class="header" href="/monkeys/<%= monkey._id %>"><%= monkey.title %></a>
+                        
+                        <div class="meta">
+                            <span><%= monkey.created.toDateString() %></span>
+                        </div>
+                        
+                        <div class="description">
+                            <p><%= monkey.text.substring(0, 100) %></p> <!--substring(0, 100)-->
+                        </div>
+                        <div class="extra">
+                            <a class="ui button violet basic floated" href="/monkeys/<%= monkey._id %>">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                    <!--<p><%= monkey._id %></p>-->
+                </div>
+            <% }); %>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+<% include partials/footer.ejs %>

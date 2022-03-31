@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+
+<div class="ui main text container segment nav-margin">
+
+    <div class="ui huge header"><%= monkey.title %></div>
+    <div class="ui top attached segment">
+
+        <div class="item">
+            <img class="ui centered rounded image" src="<%= monkey.image %>" alt="">
+            <div class="content">
+                <span><%= monkey.created.toDateString() %></span>
+            </div>
+            <div class="description">
+                <p><%- monkey.text %></p>
+            </div>
+            <a href="/monkeys/<%= monkey._id %>/edit" class="ui button orange basic">Edit</a>
+            <form id="form-style" action="/monkeys/<%= monkey._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+<% include partials/footer.ejs %>
